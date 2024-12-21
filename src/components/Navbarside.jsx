@@ -18,27 +18,108 @@ const Navbarside = () => {
   return (
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
-        <div className="demo-logo-vertical" />
+        {/* <div className="demo-logo-vertical" /> */}
         <Menu
-        className='pt-3'
+        className='pt-3 no-underline'
         //   theme="dark"
-          mode="inline"
+          //mode="inline"
           defaultSelectedKeys={['1']}
           items={[
             {
               key: '1',
               icon: <UserOutlined />,
-              label: 'nav 1',
+              label: 'Home',
             },
             {
               key: '2',
               icon: <VideoCameraOutlined />,
-              label: 'nav 2',
+              label: 'Recent',
             },
             {
               key: '3',
               icon: <UploadOutlined />,
-              label: 'nav 3',
+              label: 'Pined',
+            },
+            {
+              key: '4',
+              label: 'My works',
+            },
+            {
+              key: '5',
+              icon: <UploadOutlined />,
+              label: 'Sales accelerator',
+            },
+            {
+              key: '6',
+              icon: <UploadOutlined />,
+              label: 'Dashboards',
+            },
+            {
+              key: '7',
+              icon: <UploadOutlined />,
+              label: 'Activities',
+            },
+            {
+              key: '8',
+              label: 'Customers',
+            },
+            {
+              key: '9',
+              icon: <UploadOutlined />,
+              label: 'Accounts',
+            },
+            {
+              key: '10',
+              icon: <UploadOutlined />,
+              label: 'Contacts',
+            },
+            {
+              key: '11',
+              label: 'Sales',
+            },
+            {
+              key: '12',
+              icon: <UploadOutlined />,
+              label: 'Leads',
+            },
+            {
+              key: '13',
+              icon: <UploadOutlined />,
+              label: 'Opportunities',
+            },
+            {
+              key: '14',
+              icon: <UploadOutlined />,
+              label: 'Competitors',
+            },
+            {
+              key: '15',
+              label: 'Collateral',
+            },
+            {
+              key: '16',
+              icon: <UploadOutlined />,
+              label: 'Quotes',
+            },
+            {
+              key: '17',
+              icon: <UploadOutlined />,
+              label: 'Orders',
+            },
+            {
+              key: '18',
+              icon: <UploadOutlined />,
+              label: 'Invoices',
+            },
+            {
+              key: '19',
+              icon: <UploadOutlined />,
+              label: 'Products',
+            },
+            {
+              key: '20',
+              icon: <UploadOutlined />,
+              label: 'Sales literature',
             },
           ]}
         />

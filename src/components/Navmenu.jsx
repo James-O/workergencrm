@@ -12,7 +12,7 @@ function NavMenu() {
         setNav(!nav);
     }
     return (
-        <div className='ml-52 mt-5'>
+        <div className='mt-5'>
             <div className=" nav flex ease-in duration-300 w-full">
                 <div className=" px-10 sm:px-4 md:px-6 lg:px-6 container ml-auto">
 
