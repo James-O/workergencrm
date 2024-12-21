@@ -12,17 +12,17 @@ function NavMenu() {
         setNav(!nav);
     }
     return (
-        <div className='mt-5'>
+        <div className=''>
             <div className=" nav flex ease-in duration-300 w-full">
                 <div className=" px-10 sm:px-4 md:px-6 lg:px-6 container ml-auto">
 
                     <div className="flex items-center justify-between">
                         <div className='lg:flex hidden gap-8 items-center '>
-                            <a href='' className='text-[#191919] text-xl font-semibold hover:text-red-500'>Short chart</a>
-                            <a href='' className='text-[#191919] text-xl font-semibold hover:text-red-500'>Focused vied</a>
-                            <a href='' className='text-[#191919] text-xl font-semibold hover:text-red-500'>New</a>
-                            <a href='' className='text-[#191919] text-xl font-semibold hover:text-red-500'>Refresh</a>
-                            <a href='' className='text-[#191919] text-xl font-semibold hover:text-red-500'>colaborate</a>
+                            <a href='' className='text-[#191919] font-bold hover:text-red-500'>Short chart</a>
+                            <a href='' className='text-[#191919] font-bold hover:text-red-500'>Focused vied</a>
+                            <a href='' className='text-[#191919] font-bold hover:text-red-500'>New</a>
+                            <a href='' className='text-[#191919] font-bold hover:text-red-500'>Refresh</a>
+                            <a href='' className='text-[#191919] font-bold hover:text-red-500'>colaborate</a>
                             {/* <button className='bg-red-900 active:scale-90 transition duration-100 transform hover:shadow-xl shadow-md rounded-full px-8 py-2 text-xl font-semibold text-white'>login</button> */}
                         </div>
                         <div className="block lg:hidden z-40" onClick={handleNav}>

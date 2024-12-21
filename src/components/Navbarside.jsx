@@ -4,11 +4,21 @@ import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
 } from '@ant-design/icons';
+import { IoHomeOutline } from "react-icons/io5";
+import { BsClockHistory } from "react-icons/bs";
+import { TbPinned, TbNotebook } from "react-icons/tb";
+import { MdOutlineDashboardCustomize,MdOutlineNoteAlt,MdOutlineAccountBalance,MdOutlinePeopleAlt } from "react-icons/md";
+import { AiOutlineProduct } from "react-icons/ai";
+import { VscAccount } from "react-icons/vsc";
+import { LiaFileInvoiceDollarSolid } from "react-icons/lia";
+import { TfiNotepad } from "react-icons/tfi";
+import { HiOutlinePhoneMissedCall } from "react-icons/hi";
+import { TiShoppingBag } from "react-icons/ti";
+import { GiJetpack } from "react-icons/gi";
 import { Button, Layout, Menu, theme } from 'antd';
 import NavMenu from './Navmenu';
+
 const { Header, Sider, Content } = Layout;
 const Navbarside = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -27,17 +37,17 @@ const Navbarside = () => {
           items={[
             {
               key: '1',
-              icon: <UserOutlined />,
+              icon: <IoHomeOutline />,
               label: 'Home',
             },
             {
               key: '2',
-              icon: <VideoCameraOutlined />,
+              icon: <BsClockHistory />,
               label: 'Recent',
             },
             {
               key: '3',
-              icon: <UploadOutlined />,
+              icon: <TbPinned />,
               label: 'Pined',
             },
             {
@@ -46,17 +56,17 @@ const Navbarside = () => {
             },
             {
               key: '5',
-              icon: <UploadOutlined />,
+              icon: < GiJetpack />,
               label: 'Sales accelerator',
             },
             {
               key: '6',
-              icon: <UploadOutlined />,
+              icon: <MdOutlineDashboardCustomize />,
               label: 'Dashboards',
             },
             {
               key: '7',
-              icon: <UploadOutlined />,
+              icon: <MdOutlineNoteAlt />,
               label: 'Activities',
             },
             {
@@ -65,12 +75,12 @@ const Navbarside = () => {
             },
             {
               key: '9',
-              icon: <UploadOutlined />,
+              icon: <MdOutlineAccountBalance />,
               label: 'Accounts',
             },
             {
               key: '10',
-              icon: <UploadOutlined />,
+              icon: <VscAccount />,
               label: 'Contacts',
             },
             {
@@ -79,17 +89,17 @@ const Navbarside = () => {
             },
             {
               key: '12',
-              icon: <UploadOutlined />,
+              icon: <HiOutlinePhoneMissedCall />,
               label: 'Leads',
             },
             {
               key: '13',
-              icon: <UploadOutlined />,
+              icon: <TiShoppingBag />,
               label: 'Opportunities',
             },
             {
               key: '14',
-              icon: <UploadOutlined />,
+              icon: <MdOutlinePeopleAlt />,
               label: 'Competitors',
             },
             {
@@ -98,22 +108,22 @@ const Navbarside = () => {
             },
             {
               key: '16',
-              icon: <UploadOutlined />,
+              icon: <TfiNotepad />,
               label: 'Quotes',
             },
             {
               key: '17',
-              icon: <UploadOutlined />,
+              icon: <TbNotebook />,
               label: 'Orders',
             },
             {
               key: '18',
-              icon: <UploadOutlined />,
+              icon: <LiaFileInvoiceDollarSolid />,
               label: 'Invoices',
             },
             {
               key: '19',
-              icon: <UploadOutlined />,
+              icon: <AiOutlineProduct />,
               label: 'Products',
             },
             {
