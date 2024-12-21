@@ -18,6 +18,7 @@ import { TiShoppingBag } from "react-icons/ti";
 import { GiJetpack } from "react-icons/gi";
 import { Button, Layout, Menu, theme } from 'antd';
 import NavMenu from './Navmenu';
+import Dashboard from './contents/Dashboard';
 
 const { Header, Sider, Content } = Layout;
 const Navbarside = () => {
@@ -167,7 +168,7 @@ const Navbarside = () => {
             borderRadius: borderRadiusLG,
           }}
         >
-          Content
+          <Dashboard/>
         </Content>
       </Layout>
     </Layout>
