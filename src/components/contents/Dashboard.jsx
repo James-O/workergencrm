@@ -2,65 +2,21 @@
 import React from 'react'
 import {Dropdown, Space } from 'antd';
 import {SettingOutlined, ShoppingCartOutlined, DollarOutlined,UsergroupAddOutlined} from '@ant-design/icons'
+import AddChart from '../contents/AddChart';
 //import RecentActivity from '@/components/Dashboard/RecentActivity';
 //import { Threedot } from '@/icon/icon';
-// import ChartX from '@/components/Dashboard/Chart';
 // import TableData from '@/components/Dashboard/TableData';
 
 
 function Dashboard() {
-    //dropdown
-    const items = [
-        {
-          key: '1',
-          label: 'My Account',
-          disabled: true,
-        },
-        {
-          type: 'divider',
-        },
-        {
-          key: '2',
-          label: 'Profile',
-          extra: '⌘P',
-        },
-        {
-          key: '3',
-          label: 'Billing',
-          extra: '⌘B',
-        },
-        {
-          key: '4',
-          label: 'Settings',
-          icon: <SettingOutlined />,
-          extra: '⌘S',
-        },
-      ];
-
-      const Dropdownmenu = () => (
-        <Dropdown
-          menu={{
-            items,
-          }}
-          placement="bottomRight"
-          arrow
-        >
-          {/* <a onClick={(e) => e.preventDefault()}> */}
-            <Space>
-              {/* <Threedot /> */}
-            </Space>
-          {/* </a> */}
-        </Dropdown>
-      );
-  
-    //dropdown end
 
     let CardX =({card})=>
         (
             <div className='p-3 h-36 bg-white rounded-md shadow-md'>
                 <div className='flex'>
                     <h2 className='text-blue-900 font-bold mb-6 text-lg'>{card.title} | <span className='text-slate-300'>{card.year}</span></h2>
-                    <div className='ml-auto'><Dropdownmenu /></div>
+                    {/* <div className='ml-auto'><Dropdownmenu /></div> */}
+                    <div className='ml-auto'></div>
                 </div>
                 <div className='grid grid-cols-3'>
                     <div className='rounded-full flex w-12 h-10 bg-green-50 '>{card.icon}</div>
@@ -117,7 +73,7 @@ function Dashboard() {
                     
                 </div>
                  <div>
-                    {/* <ChartX/> */}
+                    <AddChart/>
                 </div>
                 <div className='mt-6'>
                   {/* <TableData/> */}
