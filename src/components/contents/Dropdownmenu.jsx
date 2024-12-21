@@ -1,7 +1,8 @@
 import React from 'react'
 import {SettingOutlined} from '@ant-design/icons'
 import { Dropdown, Space } from 'antd';
-import { Threedot } from '@/icon/icon';
+import { PiDotsThreeOutlineBold } from "react-icons/pi";
+
 const DropdownmenuOption = () => {
     const items = [
         {
@@ -39,7 +40,7 @@ const DropdownmenuOption = () => {
         >
           {/* <a onClick={(e) => e.preventDefault()}> */}
             <Space>
-              <Threedot />
+              <PiDotsThreeOutlineBold />
             </Space>
           {/* </a> */}
         </Dropdown>

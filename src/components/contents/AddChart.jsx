@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import ReactECharts from 'echarts-for-react';
+import DropdownmenuOption from '../contents/Dropdownmenu';
 
 
 export default function AddChart() {
@@ -51,7 +52,7 @@ export default function AddChart() {
         <div className='bg-white shadow rounded-md mt-5 p-5'>
             <div className='flex px-5'>
                 <h2 className='text-blue-900 font-bold text-lg'>Report /<span className='text-slate-300'>Today</span></h2>
-                {/* <div className='ml-auto'><Dropdownmenu/></div> */}
+                <div className='ml-auto'><DropdownmenuOption/></div>
             </div>
             <ReactECharts option={option} />
         </div>

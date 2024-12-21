@@ -3,8 +3,8 @@ import React from 'react'
 import {Dropdown, Space } from 'antd';
 import {SettingOutlined, ShoppingCartOutlined, DollarOutlined,UsergroupAddOutlined} from '@ant-design/icons'
 import AddChart from '../contents/AddChart';
-//import RecentActivity from '@/components/Dashboard/RecentActivity';
-//import { Threedot } from '@/icon/icon';
+import DropdownmenuOption from '../contents/Dropdownmenu';
+import RecentActivity from '../contents/RecentActivities';
 // import TableData from '@/components/Dashboard/TableData';
 
 
@@ -15,8 +15,7 @@ function Dashboard() {
             <div className='p-3 h-36 bg-white rounded-md shadow-md'>
                 <div className='flex'>
                     <h2 className='text-blue-900 font-bold mb-6 text-lg'>{card.title} | <span className='text-slate-300'>{card.year}</span></h2>
-                    {/* <div className='ml-auto'><Dropdownmenu /></div> */}
-                    <div className='ml-auto'></div>
+                    <div className='ml-auto'><DropdownmenuOption/></div>
                 </div>
                 <div className='grid grid-cols-3'>
                     <div className='rounded-full flex w-12 h-10 bg-green-50 '>{card.icon}</div>
@@ -84,7 +83,7 @@ function Dashboard() {
             </div>
 
             <div className="col-span-2">
-                {/* <RecentActivity/> */}
+                <RecentActivity/>
             </div>
         </div> 
     </div>  
