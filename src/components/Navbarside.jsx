@@ -19,6 +19,7 @@ import { GiJetpack } from "react-icons/gi";
 import { Button, Layout, Menu, theme } from 'antd';
 import NavMenu from './Navmenu';
 import Dashboard from './contents/Dashboard';
+import ModalDesign from './contents/ModalDesign';
 
 const { Header, Sider, Content } = Layout;
 const Navbarside = () => {
@@ -27,11 +28,11 @@ const Navbarside = () => {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
   return (
-    <Layout>
+    <Layout className='no-underline'>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         {/* <div className="demo-logo-vertical" /> */}
         <Menu
-        className='pt-3 no-underline'
+        className='pt-3 '
         //   theme="dark"
           //mode="inline"
           defaultSelectedKeys={['1']}
@@ -92,6 +93,9 @@ const Navbarside = () => {
               key: '12',
               icon: <HiOutlinePhoneMissedCall />,
               label: 'Leads',
+              onClick: function(e) {
+                return <ModalDesign/>
+              }
             },
             {
               key: '13',
