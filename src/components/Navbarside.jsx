@@ -8,7 +8,7 @@ import {
 import { IoHomeOutline } from "react-icons/io5";
 import { BsClockHistory } from "react-icons/bs";
 import { TbPinned, TbNotebook } from "react-icons/tb";
-import { MdOutlineDashboardCustomize,MdOutlineNoteAlt,MdOutlineAccountBalance,MdOutlinePeopleAlt } from "react-icons/md";
+import { MdOutlineDashboardCustomize, MdOutlineNoteAlt, MdOutlineAccountBalance, MdOutlinePeopleAlt } from "react-icons/md";
 import { AiOutlineProduct } from "react-icons/ai";
 import { VscAccount } from "react-icons/vsc";
 import { LiaFileInvoiceDollarSolid } from "react-icons/lia";
@@ -28,13 +28,13 @@ const Navbarside = () => {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
   return (
-    <Layout className='no-underline'>
+    <Layout className='sticky'>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         {/* <div className="demo-logo-vertical" /> */}
         <Menu
-        className='pt-3 '
-        //   theme="dark"
-          //mode="inline"
+          className='pt-3 '
+          //   theme="dark"
+          mode="inline"
           defaultSelectedKeys={['1']}
           items={[
             {
@@ -92,10 +92,7 @@ const Navbarside = () => {
             {
               key: '12',
               icon: <HiOutlinePhoneMissedCall />,
-              label: 'Leads',
-              onClick: function(e) {
-                return <ModalDesign/>
-              }
+              label: 'lead',
             },
             {
               key: '13',
@@ -146,22 +143,22 @@ const Navbarside = () => {
             background: colorBgContainer,
           }}
         >
-            {/* navbar here */}
+          {/* navbar here */}
           <div className='flex gap-5'>
-          <Button
-            type="text"
-            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-            onClick={() => setCollapsed(!collapsed)}
-            style={{
-              fontSize: '16px',
-              width: 64,
-              height: 64,
-            }}
-          />
-          {/* <div>Home</div> */}
-          <NavMenu/>
+            <Button
+              type="text"
+              icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+              onClick={() => setCollapsed(!collapsed)}
+              style={{
+                fontSize: '16px',
+                width: 64,
+                height: 64,
+              }}
+            />
+            {/* <div>Home</div> */}
+            <NavMenu />
           </div>
-          
+
         </Header>
         <Content
           style={{
@@ -172,7 +169,7 @@ const Navbarside = () => {
             borderRadius: borderRadiusLG,
           }}
         >
-          <Dashboard/>
+          <Dashboard />
         </Content>
       </Layout>
     </Layout>
