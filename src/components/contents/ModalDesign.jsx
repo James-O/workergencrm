@@ -17,10 +17,11 @@ const ModalDesign = () => {
                 onOk={() => setOpen(false)}
                 onCancel={() => setOpen(false)}
                 width={1000}
+                
             >
                 <div>
                     some contents...
-                    <div className='flex gap-3'>
+                    <div className='flex gap-3 p'>
                         <div className='border p-4 w-1/3 rounded-xlg'>
                             <div className='grid grid-cols-4'>
                                 <img src={Image} alt='#' className='col-span-1'/>

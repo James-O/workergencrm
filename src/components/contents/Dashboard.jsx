@@ -14,8 +14,8 @@ function Dashboard() {
     return (
         //<div className="ml-72 mt-[-34rem] mr-8">
         <div className="">
-            <h1 className='text-blue-900 font-bold size-8 text-xl'>Dashboard</h1>
-            <h2 className='mb-3'>Home / Dashboard</h2>
+            <h1 className='text-blue-900 font-bold size-8 text-xl mb-2'>Home</h1>
+            {/* <h2 className='mb-3'>Home / Dashboard</h2> */}
             <div className='grid grid-cols-12 gap-4'>
                 <div className="col-span-9">
                     <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4'>

@@ -111,18 +111,19 @@ const TableDesign = () => {
     },
   ];
   return (
-    <>
+    <div className='sm:w-3/4 lg:w-full'>
       <Space
         style={{
           marginBottom: 16,
         }}
+        className='w-3/4 lg:flex sm:hidden'
       >
         <Button onClick={setAgeSort}>Sort age</Button>
         <Button onClick={clearFilters}>Clear filters</Button>
         <Button onClick={clearAll}>Clear filters and sorters</Button>
       </Space>
       <Table columns={columns} dataSource={data} onChange={handleChange} />
-    </>
+    </div>
   );
 };
 export default TableDesign;

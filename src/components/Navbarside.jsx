@@ -28,7 +28,7 @@ const Navbarside = () => {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
   return (
-    <Layout className='sticky'>
+    <Layout className='relative'>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         {/* <div className="demo-logo-vertical" /> */}
         <Menu

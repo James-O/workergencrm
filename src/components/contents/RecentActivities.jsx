@@ -24,7 +24,7 @@ function RecentActivities() {
             activity={{
               time: '32 min',
               icon: <div className='text-green-900'> <Circle/></div>,
-              desc: 'Choose a book from your favorite genre each day.'
+              desc: 'Choose a book from your favorite day.'
             }}
           />
         </div>
@@ -33,7 +33,7 @@ function RecentActivities() {
             activity={{
               time: '56 min',
               icon: <div className='text-red-700'> <Circle/></div>,
-              desc: 'Start with basic Python programming logics'
+              desc: 'Start with basic Python programming logic.'
             }}
             />
         </div>
@@ -42,7 +42,7 @@ function RecentActivities() {
             activity={{
               time: '2hrs',
               icon: <div className='text-blue-900'> <Circle/></div>,
-              desc: 'Plant and maintain a small garden. This activity is relaxing.'
+              desc: 'Plant and maintain a small garden. It is cool and relaxing'
             }}
             />
         </div>
@@ -51,7 +51,7 @@ function RecentActivities() {
             activity={{
               time: '1 day',
               icon: <div className='text-blue-400'> <Circle/></div>,
-              desc: 'Take up photography as a hobby. Explore different techniques.'
+              desc: 'Take up photography as a hobby.'
             }}
             />
         </div>
@@ -60,11 +60,11 @@ function RecentActivities() {
             activity={{
               time: '2 days',
               icon: <div className='text-yellow-500'> <Circle/></div>,
-              desc: 'Offer your time to a local charity or community organizations.'
+              desc: 'Offer your time to a local organizations.'
             }}
             />
         </div>
-        <div>
+        {/* <div>
           <Activity 
             activity={{
               time: '4 weeks',
@@ -72,7 +72,7 @@ function RecentActivities() {
               desc: "Start a blog on a topic you are passionate about today."
             }}
             />
-        </div>
+        </div> */}
     </div>
   )
 }
