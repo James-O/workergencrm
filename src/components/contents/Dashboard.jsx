@@ -7,6 +7,8 @@ import RecentActivity from '../contents/RecentActivities';
 import TableDesign from '../contents/TableDesign';
 import CardDesign from '../contents/CardDesign';
 import ModalDesign from './ModalDesign';
+import Image from 'next/image';
+// import proImage from '../components/images/profile.jpg'
 
 
 function Dashboard() {
@@ -66,8 +68,7 @@ function Dashboard() {
                     <RecentActivity />
                 </div>
             </div>
-            <div><ModalDesign/></div>
-            <div className='mt-6'>
+            <div className='mt-1'>
                 < TableDesign />
             </div>
         </div>

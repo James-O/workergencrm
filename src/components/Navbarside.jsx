@@ -27,6 +27,7 @@ const Navbarside = () => {
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
+  const text = <ModalDesign/>;
   return (
     <Layout className='relative'>
       <Sider trigger={null} collapsible collapsed={collapsed}>
@@ -92,7 +93,7 @@ const Navbarside = () => {
             {
               key: '12',
               icon: <HiOutlinePhoneMissedCall />,
-              label: 'lead',
+              label: <p>{text}</p>,
             },
             {
               key: '13',
