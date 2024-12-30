@@ -111,12 +111,12 @@ const TableDesign = () => {
     },
   ];
   return (
-    <div className='sm:w-3/4 lg:w-full'>
+    <div className='sm:w-3/4 md:w-4/5 lg:w-full'>
       <Space
         style={{
           marginBottom: 16,
         }}
-        className='w-3/4 lg:flex sm:hidden'
+        className='lg:flex sm:hidden hidden'
       >
         <Button onClick={setAgeSort}>Sort age</Button>
         <Button onClick={clearFilters}>Clear filters</Button>

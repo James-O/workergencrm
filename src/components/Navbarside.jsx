@@ -29,11 +29,11 @@ const Navbarside = () => {
   } = theme.useToken();
   const text = <ModalDesign/>;
   return (
-    <Layout className='relative'>
+    <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         {/* <div className="demo-logo-vertical" /> */}
         <Menu
-          className='pt-3 '
+          className='pt-3 pb-64'
           //   theme="dark"
           mode="inline"
           defaultSelectedKeys={['1']}

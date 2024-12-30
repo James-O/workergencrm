@@ -18,7 +18,7 @@ function Dashboard() {
         <div className="">
             <h1 className='text-blue-900 font-bold size-8 text-xl mb-2'>Home</h1>
             {/* <h2 className='mb-3'>Home / Dashboard</h2> */}
-            <div className='grid grid-cols-12 gap-4'>
+            <div className='grid grid-cols-12 gap-2'>
                 <div className="col-span-9">
                     <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4'>
                         <div>
@@ -68,7 +68,7 @@ function Dashboard() {
                     <RecentActivity />
                 </div>
             </div>
-            <div className='mt-1'>
+            <div className='mt-2'>
                 < TableDesign />
             </div>
         </div>
